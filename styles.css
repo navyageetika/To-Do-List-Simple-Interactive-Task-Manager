@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c678a9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scroll on the page */
+}
+
+.container {
+    background-color: rgb(240, 214, 246);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Container takes 80% of the viewport width */
+    max-width: 800px; /* Maximum width set to 800px */
+    height: 60vh; /* Responsive height (60% of the viewport height) */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto; /* Allows vertical scrolling when content overflows */
+    box-sizing: border-box; /* Ensures padding and borders don't cause overflow */
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    width: 100%; /* Makes the input field responsive */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+}
+
+button {
+    width: auto; /* Adjusts button size based on content */
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%; /* Ensures the list does not overflow */
+    margin-top: 10px;
+}
+
+li {
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Ensures list item fits within the container */
+    box-sizing: border-box;
+}
+
+li button {
+    background-color: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+li button:hover {
+    background-color: #e60000;
+}
+
+.accomplished {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.right-actions {
+    display: flex;
+    gap: 10px; /* Add space between the tick and cross */
+    align-items: center;
+}
+
+.tick, .cross {
+    cursor: pointer;
+}
+
+.tick {
+    color: green;
+}
+
+.cross {
+    color: red;
+}
